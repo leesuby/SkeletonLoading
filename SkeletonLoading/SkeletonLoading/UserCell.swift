@@ -22,13 +22,13 @@ class UserCell: UICollectionViewCell {
         image = UIImageView()
         image.image = UIImage(named: "picture")
         image.contentMode = .scaleAspectFill
-
+        image.isSkeletonable = true
         
         userName = UILabel()
         userName.textColor = .black
         userName.font = .preferredFont(forTextStyle: .largeTitle, compatibleWith: .none)
         userName.text = "Long"
-      
+        userName.isSkeletonable = true
     }
     
     func initContraints(){
