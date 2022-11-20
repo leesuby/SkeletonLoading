@@ -58,12 +58,9 @@
 		E764943F29298261008A8D9E /* PrepareViewForSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764943E29298261008A8D9E /* PrepareViewForSkeleton.swift */; };
 		E764944129298287008A8D9E /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944029298287008A8D9E /* Swizzling.swift */; };
 		E7649443292982A5008A8D9E /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7649442292982A5008A8D9E /* DispatchQueue+Extensions.swift */; };
-		E764944529298326008A8D9E /* ProcessInfo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944429298326008A8D9E /* ProcessInfo+Extensions.swift */; };
 		E76494472929836B008A8D9E /* UILabel+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494462929836B008A8D9E /* UILabel+IBInspectable.swift */; };
 		E764944B29298417008A8D9E /* SkeletonTreeNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944A29298417008A8D9E /* SkeletonTreeNode+Extensions.swift */; };
 		E764944D292984C6008A8D9E /* SkeletonLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944C292984C6008A8D9E /* SkeletonLayerBuilder.swift */; };
-		E764944F29298506008A8D9E /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944E29298506008A8D9E /* Notification+Extensions.swift */; };
-		E76494532929854F008A8D9E /* Notification+SkeletonFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494522929854F008A8D9E /* Notification+SkeletonFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,12 +117,9 @@
 		E764943E29298261008A8D9E /* PrepareViewForSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareViewForSkeleton.swift; sourceTree = "<group>"; };
 		E764944029298287008A8D9E /* Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 		E7649442292982A5008A8D9E /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
-		E764944429298326008A8D9E /* ProcessInfo+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Extensions.swift"; sourceTree = "<group>"; };
 		E76494462929836B008A8D9E /* UILabel+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+IBInspectable.swift"; sourceTree = "<group>"; };
 		E764944A29298417008A8D9E /* SkeletonTreeNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SkeletonTreeNode+Extensions.swift"; sourceTree = "<group>"; };
 		E764944C292984C6008A8D9E /* SkeletonLayerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonLayerBuilder.swift; sourceTree = "<group>"; };
-		E764944E29298506008A8D9E /* Notification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
-		E76494522929854F008A8D9E /* Notification+SkeletonFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+SkeletonFlow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,22 +186,27 @@
 			path = Szizzle;
 			sourceTree = "<group>";
 		};
+		E761D9DA292A3C67005F9A4D /* RecoverState */ = {
+			isa = PBXGroup;
+			children = (
+				E7649438292981B8008A8D9E /* RecoverableViewState.swift */,
+				E76494362929819E008A8D9E /* Recoverable.swift */,
+			);
+			path = RecoverState;
+			sourceTree = "<group>";
+		};
 		E76493E6292971B3008A8D9E /* Copy */ = {
 			isa = PBXGroup;
 			children = (
 				E7649410292977AA008A8D9E /* SkeletonConfig.swift */,
 				E76493ED292972CF008A8D9E /* SkeletonView.swift */,
+				E761D9DA292A3C67005F9A4D /* RecoverState */,
 				E761D9D9292A38D1005F9A4D /* Szizzle */,
 				E761D9D8292A386C005F9A4D /* AssociatedObject */,
 				E7649457292986CC008A8D9E /* Skeleton */,
 				E764945629298601008A8D9E /* Extension */,
 				E76493F52929738C008A8D9E /* UICollectionView */,
 				E764943E29298261008A8D9E /* PrepareViewForSkeleton.swift */,
-				E764944429298326008A8D9E /* ProcessInfo+Extensions.swift */,
-				E764944E29298506008A8D9E /* Notification+Extensions.swift */,
-				E7649438292981B8008A8D9E /* RecoverableViewState.swift */,
-				E76494362929819E008A8D9E /* Recoverable.swift */,
-				E76494522929854F008A8D9E /* Notification+SkeletonFlow.swift */,
 				E7649442292982A5008A8D9E /* DispatchQueue+Extensions.swift */,
 				E764941829297852008A8D9E /* Recursive.swift */,
 				E7649414292977FC008A8D9E /* SubviewsSkeletonables.swift */,
@@ -343,7 +342,6 @@
 				E7649443292982A5008A8D9E /* DispatchQueue+Extensions.swift in Sources */,
 				E75E68D3292954C10089EE8D /* CollectionViewCell.swift in Sources */,
 				E75E68D2292954C10089EE8D /* ViewController.swift in Sources */,
-				E764944F29298506008A8D9E /* Notification+Extensions.swift in Sources */,
 				E764942929297A20008A8D9E /* SkeletonMultilineLayerBuilder.swift in Sources */,
 				E764941F292978F7008A8D9E /* SkeletonLayer.swift in Sources */,
 				E76493FC2929738C008A8D9E /* SkeletonCollectionDelegate.swift in Sources */,
@@ -352,7 +350,6 @@
 				E76493EC29297295008A8D9E /* UICollectionView+Extensions.swift in Sources */,
 				E764943529298162008A8D9E /* UIView+CollectionSkeleton.swift in Sources */,
 				E7649427292979F4008A8D9E /* SkeletonMultilinesLayerConfig.swift in Sources */,
-				E764944529298326008A8D9E /* ProcessInfo+Extensions.swift in Sources */,
 				E764944B29298417008A8D9E /* SkeletonTreeNode+Extensions.swift in Sources */,
 				E75A9A7F291DF221006C6825 /* TestViewController.swift in Sources */,
 				E76493F229297334008A8D9E /* SkeletonGradient.swift in Sources */,
@@ -375,7 +372,6 @@
 				E76493F0292972FF008A8D9E /* UIView+SKExtensions.swift in Sources */,
 				E75A9A8F291E041C006C6825 /* UserModel.swift in Sources */,
 				E76494012929751A008A8D9E /* UICollectionView+CollectionSkeleton.swift in Sources */,
-				E76494532929854F008A8D9E /* Notification+SkeletonFlow.swift in Sources */,
 				E75A9A91291E04B1006C6825 /* UserCell.swift in Sources */,
 				E76494232929797F008A8D9E /* SkeletonTextLineHeight.swift in Sources */,
 				E764943B292981F2008A8D9E /* UIView+Transitions.swift in Sources */,

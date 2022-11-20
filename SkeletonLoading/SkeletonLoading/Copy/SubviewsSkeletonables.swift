@@ -14,12 +14,6 @@ extension UIView {
     
 }
 
-extension UICollectionView {
-    override var subviewsToSkeleton: [UIView] {
-        subviews
-    }
-}
-
 extension UICollectionViewCell {
     override var subviewsToSkeleton: [UIView] {
         contentView.subviews

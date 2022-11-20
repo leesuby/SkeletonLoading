@@ -28,7 +28,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
