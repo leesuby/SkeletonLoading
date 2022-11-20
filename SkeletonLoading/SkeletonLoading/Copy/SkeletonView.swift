@@ -34,13 +34,11 @@ public extension UIView {
     }
 
     func layoutSkeletonIfNeeded() {
-        _flowDelegate?.willBeginLayingSkeletonsIfNeeded(rootView: self)
         recursiveLayoutSkeletonIfNeeded(root: self)
     }
     
     func hideSkeleton(reloadDataAfter reload: Bool = true, transition: SkeletonTransitionStyle = .crossDissolve(0.25)) {
         _delayedShowSkeletonWorkItem?.cancel()
-        _flowDelegate?.willBeginHidingSkeletons(rootView: self)
         recursiveHideSkeleton(reloadDataAfter: reload, transition: transition, root: self)
     }
     

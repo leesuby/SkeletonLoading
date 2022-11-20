@@ -19,12 +19,6 @@ extension UIView {
         skeletonConfig config: SkeletonConfig,
         notifyDelegate: Bool = true
     ) {
-        
-        if notifyDelegate {
-            _flowDelegate = SkeletonFlowHandler()
-            _flowDelegate?.willBeginShowingSkeletons(rootView: self)
-        }
-        
         recursiveShowSkeleton(skeletonConfig: config, root: self)
     }
 
@@ -32,11 +26,6 @@ extension UIView {
         skeletonConfig config: SkeletonConfig,
         notifyDelegate: Bool = true
     ) {
-        
-        if notifyDelegate {
-            _flowDelegate?.willBeginUpdatingSkeletons(rootView: self)
-        }
-        
         recursiveUpdateSkeleton(skeletonConfig: config, root: self)
     }
 
@@ -47,10 +36,6 @@ extension UIView {
             startSkeletonAnimation()
         }) { subview in
             subview.recursiveLayoutSkeletonIfNeeded()
-        }
-
-        if let root = root {
-            _flowDelegate?.didLayoutSkeletonsIfNeeded(rootView: root)
         }
     }
 
@@ -68,10 +53,6 @@ extension UIView {
             removeSkeletonLayer()
         }) { subview in
             subview.recursiveHideSkeleton(reloadDataAfter: reload, transition: transition)
-        }
-        
-        if let root = root {
-            _flowDelegate?.didHideSkeletons(rootView: root)
         }
     }
     
@@ -101,10 +82,6 @@ private extension UIView {
         }) { subview in
             subview.recursiveShowSkeleton(skeletonConfig: config)
         }
-
-        if let root = root {
-            _flowDelegate?.didShowSkeletons(rootView: root)
-        }
     }
     
     func recursiveUpdateSkeleton(skeletonConfig config: SkeletonConfig, root: UIView? = nil) {
@@ -120,10 +97,6 @@ private extension UIView {
             }
         }) { subview in
             subview.recursiveUpdateSkeleton(skeletonConfig: config)
-        }
-
-        if let root = root {
-            _flowDelegate?.didUpdateSkeletons(rootView: root)
         }
     }
     

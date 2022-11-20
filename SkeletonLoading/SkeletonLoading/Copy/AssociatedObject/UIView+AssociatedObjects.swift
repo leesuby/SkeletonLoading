@@ -42,11 +42,6 @@ extension UIView {
         case off
     }
 
-    var _flowDelegate: SkeletonFlowDelegate? {
-        get { return ao_get(pkey: &ViewAssociatedKeys.flowDelegate) as? SkeletonFlowDelegate }
-        set { ao_setOptional(newValue, pkey: &ViewAssociatedKeys.flowDelegate) }
-    }
-
     var _skeletonLayer: SkeletonLayer? {
         get { return ao_get(pkey: &ViewAssociatedKeys.skeletonLayer) as? SkeletonLayer }
         set { ao_setOptional(newValue, pkey: &ViewAssociatedKeys.skeletonLayer) }
