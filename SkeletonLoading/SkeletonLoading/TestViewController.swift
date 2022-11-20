@@ -86,14 +86,18 @@ extension TestViewController : SkeletonCollectionViewDataSource{
         if let userCell = collectionView.dequeueReusableCell(withReuseIdentifier: "userCell", for: indexPath) as? UserCell{
             
             userCell.config(user: dataSource[indexPath.row])
-        
+            userCell.isSkeletonable = true
             cell = userCell
-            cell.isSkeletonable = true
+           
         }
         
         return cell
     }
     
+    func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
+        let cell = cell as? UserCell
+        cell?.isSkeletonable = true
+    }
     
     //UICollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

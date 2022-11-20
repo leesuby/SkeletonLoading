@@ -116,3 +116,11 @@ extension UIView {
     }
     
 }
+
+extension UICollectionView {
+    override var subviewsToSkeleton: [UIView] {
+        subviews
+    }
+}
+
+

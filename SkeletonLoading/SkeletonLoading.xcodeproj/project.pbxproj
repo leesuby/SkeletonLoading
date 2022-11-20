@@ -142,6 +142,7 @@
 		E75A9A79291DF221006C6825 /* SkeletonLoading */ = {
 			isa = PBXGroup;
 			children = (
+				E761D9DB292AA35A005F9A4D /* SkeletonLoadingSource */,
 				E76493E6292971B3008A8D9E /* Copy */,
 				E75E68D1292954C10089EE8D /* Main.storyboard */,
 				E75A9A7A291DF221006C6825 /* AppDelegate.swift */,
@@ -183,6 +184,21 @@
 				E76494362929819E008A8D9E /* Recoverable.swift */,
 			);
 			path = RecoverState;
+			sourceTree = "<group>";
+		};
+		E761D9DB292AA35A005F9A4D /* SkeletonLoadingSource */ = {
+			isa = PBXGroup;
+			children = (
+				E761D9DC292AA782005F9A4D /* Model */,
+			);
+			path = SkeletonLoadingSource;
+			sourceTree = "<group>";
+		};
+		E761D9DC292AA782005F9A4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E76493E6292971B3008A8D9E /* Copy */ = {

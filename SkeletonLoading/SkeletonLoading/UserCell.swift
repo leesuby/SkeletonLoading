@@ -13,22 +13,22 @@ class UserCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        isSkeletonable = true
         initView()
         initContraints()
     }
     
     func initView(){
+        contentView.isSkeletonable = true
         image = UIImageView()
-        image.image = UIImage(named: "Logo")
+        image.image = UIImage(named: "picture")
         image.contentMode = .scaleAspectFill
-        image.isSkeletonable = true
+
         
         userName = UILabel()
         userName.textColor = .black
         userName.font = .preferredFont(forTextStyle: .largeTitle, compatibleWith: .none)
         userName.text = "Long"
-        userName.isSkeletonable = true
+      
     }
     
     func initContraints(){
