@@ -22,14 +22,14 @@ public extension UIView {
     ///   - gradient: The gradient of the skeleton. Defaults to `SkeletonAppearance.default.gradient`.
     ///   - animation: The animation of the skeleton. Defaults to `nil`.
     ///   - transition: The style of the transition when the skeleton appears. Defaults to `.crossDissolve(0.25)`.
-    func showAnimatedGradientSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient, animation: SkeletonLayerAnimation? = nil, transition: SkeletonTransitionStyle = .crossDissolve(0.25)) {
+    func showAnimatedGradientSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient, transition: SkeletonTransitionStyle = .crossDissolve(0.25)) {
         _delayedShowSkeletonWorkItem?.cancel()
-        let config = SkeletonConfig(colors: gradient.colors, animation: animation, transition: transition)
+        let config = SkeletonConfig(colors: gradient.colors, transition: transition)
         showSkeleton(skeletonConfig: config)
     }
 
-    func updateAnimatedGradientSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient, animation: SkeletonLayerAnimation? = nil) {
-        let config = SkeletonConfig(colors: gradient.colors, animation: animation)
+    func updateAnimatedGradientSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient) {
+        let config = SkeletonConfig(colors: gradient.colors)
         updateSkeleton(skeletonConfig: config)
     }
 

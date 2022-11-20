@@ -13,10 +13,6 @@ struct SkeletonLayer {
     private var maskLayer: CALayer
     private weak var holder: UIView?
     
-//    var type: SkeletonType {
-//        return maskLayer is CAGradientLayer ? .gradient : .solid
-//    }
-    
     var contentLayer: CALayer {
         return maskLayer
     }
@@ -100,7 +96,6 @@ struct SkeletonLayer {
 extension SkeletonLayer {
     
     func start(_ anim: SkeletonLayerAnimation? = nil, completion: (() -> Void)? = nil) {
-//        let animation = anim ?? type.defaultLayerAnimation(isRTL: holder?.isRTL ?? false)
         contentLayer.playAnimation(SkeletonAnimationBuilder().makeSlidingAnimation(), key: "skeletonAnimation", completion: completion)
     }
 

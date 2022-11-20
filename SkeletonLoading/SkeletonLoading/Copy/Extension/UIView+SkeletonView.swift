@@ -19,7 +19,6 @@ extension UIView {
         skeletonConfig config: SkeletonConfig,
         notifyDelegate: Bool = true
     ) {
-//        _isSkeletonAnimated = config.animated
         
         if notifyDelegate {
             _flowDelegate = SkeletonFlowHandler()
@@ -33,7 +32,6 @@ extension UIView {
         skeletonConfig config: SkeletonConfig,
         notifyDelegate: Bool = true
     ) {
-       // _isSkeletonAnimated = config.animated
         
         if notifyDelegate {
             _flowDelegate?.willBeginUpdatingSkeletons(rootView: self)
@@ -46,9 +44,7 @@ extension UIView {
         subviewsSkeletonables.recursiveSearch(leafBlock: {
             guard isSkeletonable, sk.isSkeletonActive else { return }
             layoutSkeletonLayerIfNeeded()
-            if let config = _currentSkeletonConfig, !_isSkeletonAnimated {
-                startSkeletonAnimation(config.animation)
-            }
+            startSkeletonAnimation()
         }) { subview in
             subview.recursiveLayoutSkeletonIfNeeded()
         }
@@ -116,7 +112,7 @@ private extension UIView {
         _currentSkeletonConfig = config
         updateDummyDataSourceIfNeeded()
         subviewsSkeletonables.recursiveSearch(leafBlock: {
-            if let skeletonLayer = _skeletonLayer{
+            if _skeletonLayer != nil{
                 removeSkeletonLayer()
                 addSkeletonLayer(skeletonConfig: config)
             } else {

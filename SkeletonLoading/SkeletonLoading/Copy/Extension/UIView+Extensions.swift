@@ -142,8 +142,7 @@ extension UIView {
             // Workaround to fix the problem when inserting a sublayer and
             // the content offset is modified by the system.
             (self as? UITextView)?.setContentOffset(.zero, animated: false)
-            
-            self.startSkeletonAnimation(config.animation)
+            self.startSkeletonAnimation()
             
         }
         _status = .on
@@ -153,8 +152,7 @@ extension UIView {
         guard let skeletonLayer = _skeletonLayer else { return }
         skeletonLayer.update(usingColors: config.colors)
         
-        startSkeletonAnimation(config.animation)
-        
+        startSkeletonAnimation()
     }
 
     func layoutSkeletonLayerIfNeeded() {
