@@ -22,15 +22,14 @@ struct SkeletonMultilinesLayerConfig {
     var multilineSpacing: CGFloat
     var paddingInsets: UIEdgeInsets
     var alignment: NSTextAlignment
-    var isRTL: Bool
     var shouldCenterVertically: Bool
 
     /// Returns padding insets taking into account if the RTL is activated
     var calculatedPaddingInsets: UIEdgeInsets {
         UIEdgeInsets(top: paddingInsets.top,
-                     left: isRTL ? paddingInsets.right : paddingInsets.left,
+                     left: paddingInsets.left,
                      bottom: paddingInsets.bottom,
-                     right: isRTL ? paddingInsets.left : paddingInsets.right)
+                     right: paddingInsets.right)
     }
     
 }

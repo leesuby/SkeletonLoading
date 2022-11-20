@@ -101,3 +101,16 @@ private extension UIView {
     }
     
 }
+
+
+extension UIView {
+    
+    @objc var subviewsSkeletonables: [UIView] {
+        subviewsToSkeleton.filter { $0.isSkeletonable }
+    }
+
+    @objc var subviewsToSkeleton: [UIView] {
+        subviews
+    }
+    
+}

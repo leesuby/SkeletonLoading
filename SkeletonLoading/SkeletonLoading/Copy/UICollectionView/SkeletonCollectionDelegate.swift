@@ -37,20 +37,4 @@ private extension SkeletonCollectionDelegate {
             notifyDelegate: false
         )
     }
-    
-    func headerOrFooterView(_ tableView: UITableView, for viewIdentifier: String? ) -> UIView? {
-        guard let viewIdentifier = viewIdentifier,
-              let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: viewIdentifier)
-        else {
-            return nil
-        }
-        
-        skeletonizeViewIfContainerSkeletonIsActive(
-            container: tableView,
-            view: header
-        )
-        
-        return header
-    }
-    
 }

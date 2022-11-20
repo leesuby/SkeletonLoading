@@ -96,13 +96,12 @@ extension CALayer {
 
 private extension CALayer {
     
-    func alignLayerFrame(_ rect: CGRect, paddingInsets: UIEdgeInsets, alignment: NSTextAlignment, isRTL: Bool) -> CGRect {
+    func alignLayerFrame(_ rect: CGRect, paddingInsets: UIEdgeInsets, alignment: NSTextAlignment) -> CGRect {
         var newRect = rect
         let superlayerWidth = (superlayer?.bounds.width ?? 0)
 
         switch alignment {
-        case .natural where isRTL,
-             .right:
+        case .right:
             newRect.origin.x = superlayerWidth - rect.width - paddingInsets.right
         case .center:
             newRect.origin.x = (superlayerWidth + paddingInsets.left - paddingInsets.right - rect.width) / 2
@@ -160,7 +159,6 @@ extension CALayer {
             .setPadding(config.paddingInsets)
             .setHeight(height)
             .setAlignment(config.alignment)
-            .setIsRTL(config.isRTL)
     
         (0..<numberOfSublayers).forEach { index in
             let width = calculatedWidthForLine(at: index, totalLines: numberOfSublayers, lastLineFillPercent: config.lastLineFillPercent, paddingInsets: config.paddingInsets)
@@ -192,8 +190,7 @@ extension CALayer {
                                    size: CGSize(width: width, height: height),
                                    multilineSpacing: multilineSpacing,
                                    paddingInsets: paddingInsets,
-                                   alignment: config.alignment,
-                                   isRTL: config.isRTL
+                                   alignment: config.alignment
             )
         }
         
@@ -211,7 +208,7 @@ extension CALayer {
         }
     }
 
-    func updateLayerFrame(for index: Int, totalLines: Int, size: CGSize, multilineSpacing: CGFloat, paddingInsets: UIEdgeInsets, alignment: NSTextAlignment, isRTL: Bool) {
+    func updateLayerFrame(for index: Int, totalLines: Int, size: CGSize, multilineSpacing: CGFloat, paddingInsets: UIEdgeInsets, alignment: NSTextAlignment) {
         let spaceRequiredForEachLine = size.height + multilineSpacing
         let newFrame = CGRect(x: paddingInsets.left,
                               y: CGFloat(index) * spaceRequiredForEachLine + paddingInsets.top,
@@ -219,7 +216,7 @@ extension CALayer {
                               height: size.height)
 
         if index == totalLines - 1 {
-            frame = alignLayerFrame(newFrame, paddingInsets: paddingInsets, alignment: alignment, isRTL: isRTL)
+            frame = alignLayerFrame(newFrame, paddingInsets: paddingInsets, alignment: alignment)
         } else {
             frame = newFrame
         }

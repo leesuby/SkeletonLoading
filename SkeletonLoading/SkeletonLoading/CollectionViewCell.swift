@@ -10,7 +10,6 @@ class CollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        isSkeletonable = true
         createLabel()
         createImageView()
         

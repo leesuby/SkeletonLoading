@@ -13,7 +13,6 @@ class SkeletonMultilineLayerBuilder {
     var multilineSpacing: CGFloat = SkeletonAppearance.default.multilineSpacing
     var paddingInsets: UIEdgeInsets = .zero
     var alignment: NSTextAlignment = .natural
-    var isRTL: Bool = false
 
 
     @discardableResult
@@ -58,12 +57,6 @@ class SkeletonMultilineLayerBuilder {
         return self
     }
     
-    @discardableResult
-    func setIsRTL(_ isRTL: Bool) -> SkeletonMultilineLayerBuilder {
-        self.isRTL = isRTL
-        return self
-    }
-
     func build() -> CALayer? {
         guard let index = index,
               let width = width,
@@ -79,8 +72,7 @@ class SkeletonMultilineLayerBuilder {
                                size: CGSize(width: width, height: height),
                                multilineSpacing: multilineSpacing,
                                paddingInsets: paddingInsets,
-                               alignment: alignment,
-                               isRTL: isRTL)
+                               alignment: alignment)
 
         layer.cornerRadius = CGFloat(radius)
         layer.masksToBounds = true

@@ -62,7 +62,6 @@ struct SkeletonLayer {
                                                    multilineSpacing: textView.multilineSpacing,
                                                    paddingInsets: textView.paddingInsets,
                                                    alignment: textView.textAlignment,
-                                                   isRTL: holder?.isRTL ?? false,
                                                    shouldCenterVertically: textView.shouldCenterTextVertically)
 
         maskLayer.addMultilinesLayers(for: config)
@@ -77,7 +76,6 @@ struct SkeletonLayer {
                                                    multilineSpacing: textView.multilineSpacing,
                                                    paddingInsets: textView.paddingInsets,
                                                    alignment: textView.textAlignment,
-                                                   isRTL: holder?.isRTL ?? false,
                                                    shouldCenterVertically: textView.shouldCenterTextVertically)
         
         maskLayer.updateMultilinesLayers(for: config)

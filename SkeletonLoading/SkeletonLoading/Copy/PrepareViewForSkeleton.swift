@@ -106,15 +106,3 @@ extension UIButton {
     }
     
 }
-
-extension UITableViewHeaderFooterView {
-    
-    override func prepareViewForSkeleton() {
-        backgroundView?.backgroundColor = .clear
-        
-        if isUserInteractionDisabledWhenSkeletonIsActive {
-            isUserInteractionEnabled = false
-        }
-    }
-    
-}

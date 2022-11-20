@@ -29,14 +29,6 @@ extension UIView {
         superview is UIStackView
     }
     
-    var isRTL: Bool {
-        if #available(iOS 10.0, *), #available(tvOS 10.0, *) {
-            return effectiveUserInterfaceLayoutDirection == .rightToLeft
-        } else {
-            return false
-        }
-    }
-    
     /// Math
     
     var definedMaxBounds: CGRect {

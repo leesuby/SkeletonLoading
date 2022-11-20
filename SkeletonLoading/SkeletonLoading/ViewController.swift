@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         transitionDurationStepper.value = 0.25
+        
         collectionView.prepareSkeleton(completion: { done in
             self.view.showAnimatedGradientSkeleton()
         })
@@ -127,6 +128,6 @@ extension ViewController: SkeletonCollectionViewDataSource {
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
         let cell = cell as? CollectionViewCell
-        cell?.isSkeletonable = indexPath.row != 0
+        cell?.isSkeletonable = true
     }
 }
