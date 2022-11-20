@@ -19,7 +19,7 @@ struct SkeletonLayer {
     
     init(colors: [UIColor], skeletonHolder holder: UIView) {
         self.holder = holder
-        self.maskLayer = CAGradientLayer()   //LL
+        self.maskLayer = CAGradientLayer()
         self.maskLayer.anchorPoint = .zero
         self.maskLayer.bounds = holder.definedMaxBounds
         self.maskLayer.cornerRadius = CGFloat(holder.skeletonCornerRadius)

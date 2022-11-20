@@ -17,14 +17,6 @@ public extension SkeletonViewExtension where ExtendedType: UIView {
     
     /// Returns a string that describes the hierarchy of the skeleton, indicating
     /// whether the receiver is skeletonable and all skeletonable children.
-    var skeletonTreeDescription: String {
-        guard let theJSONData = try? JSONSerialization.data(withJSONObject: treeNode.dictionaryRepresentation, options: [.prettyPrinted]) else {
-            return ""
-        }
-        
-        return String(data: theJSONData, encoding: .utf8)!
-    }
-    
     var isSkeletonActive: Bool {
         type._status == .on || type.subviewsSkeletonables.contains(where: { $0.sk.isSkeletonActive })
     }

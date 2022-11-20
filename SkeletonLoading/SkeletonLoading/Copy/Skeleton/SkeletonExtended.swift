@@ -39,7 +39,8 @@ extension SkeletonViewExtended {
     /// Instance SkeletonView extension point.
     public var sk: SkeletonViewExtension<Self> {
         get { SkeletonViewExtension(self) }
-        // swiftlint:disable:next unused_setter_value
+        
         set {}
     }
 }
+

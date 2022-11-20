@@ -23,7 +23,6 @@
 		E76493F0292972FF008A8D9E /* UIView+SKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493EF292972FF008A8D9E /* UIView+SKExtensions.swift */; };
 		E76493F229297334008A8D9E /* SkeletonGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493F129297334008A8D9E /* SkeletonGradient.swift */; };
 		E76493F429297357008A8D9E /* SkeletonCollectionViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493F329297357008A8D9E /* SkeletonCollectionViewProtocols.swift */; };
-		E76493FA2929738C008A8D9E /* SkeletonReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493F62929738C008A8D9E /* SkeletonReusableCell.swift */; };
 		E76493FB2929738C008A8D9E /* SkeletonCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493F72929738C008A8D9E /* SkeletonCollectionDataSource.swift */; };
 		E76493FC2929738C008A8D9E /* SkeletonCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493F82929738C008A8D9E /* SkeletonCollectionDelegate.swift */; };
 		E76493FD2929738C008A8D9E /* CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493F92929738C008A8D9E /* CollectionSkeleton.swift */; };
@@ -31,7 +30,6 @@
 		E76494012929751A008A8D9E /* UICollectionView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494002929751A008A8D9E /* UICollectionView+CollectionSkeleton.swift */; };
 		E7649405292975A7008A8D9E /* UIView+SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7649404292975A7008A8D9E /* UIView+SkeletonView.swift */; };
 		E76494072929765A008A8D9E /* SkeletonAnimationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494062929765A008A8D9E /* SkeletonAnimationBuilder.swift */; };
-		E76494092929768F008A8D9E /* CALayer+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494082929768F008A8D9E /* CALayer+Animations.swift */; };
 		E764940D2929774F008A8D9E /* SkeletonAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764940C2929774F008A8D9E /* SkeletonAppearance.swift */; };
 		E764940F29297779008A8D9E /* SkeletonTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764940E29297779008A8D9E /* SkeletonTransitionStyle.swift */; };
 		E7649411292977AA008A8D9E /* SkeletonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7649410292977AA008A8D9E /* SkeletonConfig.swift */; };
@@ -47,7 +45,6 @@
 		E764942929297A20008A8D9E /* SkeletonMultilineLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764942829297A20008A8D9E /* SkeletonMultilineLayerBuilder.swift */; };
 		E764942B29297A77008A8D9E /* SkeletonTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764942A29297A77008A8D9E /* SkeletonTextNode.swift */; };
 		E764942D29297AAE008A8D9E /* SkeletonTextNumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764942C29297AAE008A8D9E /* SkeletonTextNumberOfLines.swift */; };
-		E764942F29297AFA008A8D9E /* SkeletonTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764942E29297AFA008A8D9E /* SkeletonTreeNode.swift */; };
 		E764943329298143008A8D9E /* UIView+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764943229298143008A8D9E /* UIView+Swizzling.swift */; };
 		E764943529298162008A8D9E /* UIView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764943429298162008A8D9E /* UIView+CollectionSkeleton.swift */; };
 		E76494372929819E008A8D9E /* Recoverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494362929819E008A8D9E /* Recoverable.swift */; };
@@ -58,7 +55,6 @@
 		E764944129298287008A8D9E /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944029298287008A8D9E /* Swizzling.swift */; };
 		E7649443292982A5008A8D9E /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7649442292982A5008A8D9E /* DispatchQueue+Extensions.swift */; };
 		E76494472929836B008A8D9E /* UILabel+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76494462929836B008A8D9E /* UILabel+IBInspectable.swift */; };
-		E764944B29298417008A8D9E /* SkeletonTreeNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944A29298417008A8D9E /* SkeletonTreeNode+Extensions.swift */; };
 		E764944D292984C6008A8D9E /* SkeletonLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764944C292984C6008A8D9E /* SkeletonLayerBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +77,6 @@
 		E76493EF292972FF008A8D9E /* UIView+SKExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SKExtensions.swift"; sourceTree = "<group>"; };
 		E76493F129297334008A8D9E /* SkeletonGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonGradient.swift; sourceTree = "<group>"; };
 		E76493F329297357008A8D9E /* SkeletonCollectionViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonCollectionViewProtocols.swift; sourceTree = "<group>"; };
-		E76493F62929738C008A8D9E /* SkeletonReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonReusableCell.swift; sourceTree = "<group>"; };
 		E76493F72929738C008A8D9E /* SkeletonCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonCollectionDataSource.swift; sourceTree = "<group>"; };
 		E76493F82929738C008A8D9E /* SkeletonCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonCollectionDelegate.swift; sourceTree = "<group>"; };
 		E76493F92929738C008A8D9E /* CollectionSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSkeleton.swift; sourceTree = "<group>"; };
@@ -89,7 +84,6 @@
 		E76494002929751A008A8D9E /* UICollectionView+CollectionSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
 		E7649404292975A7008A8D9E /* UIView+SkeletonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SkeletonView.swift"; sourceTree = "<group>"; };
 		E76494062929765A008A8D9E /* SkeletonAnimationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonAnimationBuilder.swift; sourceTree = "<group>"; };
-		E76494082929768F008A8D9E /* CALayer+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Animations.swift"; sourceTree = "<group>"; };
 		E764940C2929774F008A8D9E /* SkeletonAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonAppearance.swift; sourceTree = "<group>"; };
 		E764940E29297779008A8D9E /* SkeletonTransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonTransitionStyle.swift; sourceTree = "<group>"; };
 		E7649410292977AA008A8D9E /* SkeletonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonConfig.swift; sourceTree = "<group>"; };
@@ -105,7 +99,6 @@
 		E764942829297A20008A8D9E /* SkeletonMultilineLayerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonMultilineLayerBuilder.swift; sourceTree = "<group>"; };
 		E764942A29297A77008A8D9E /* SkeletonTextNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonTextNode.swift; sourceTree = "<group>"; };
 		E764942C29297AAE008A8D9E /* SkeletonTextNumberOfLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonTextNumberOfLines.swift; sourceTree = "<group>"; };
-		E764942E29297AFA008A8D9E /* SkeletonTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonTreeNode.swift; sourceTree = "<group>"; };
 		E764943229298143008A8D9E /* UIView+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Swizzling.swift"; sourceTree = "<group>"; };
 		E764943429298162008A8D9E /* UIView+CollectionSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
 		E76494362929819E008A8D9E /* Recoverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recoverable.swift; sourceTree = "<group>"; };
@@ -116,7 +109,6 @@
 		E764944029298287008A8D9E /* Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 		E7649442292982A5008A8D9E /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		E76494462929836B008A8D9E /* UILabel+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+IBInspectable.swift"; sourceTree = "<group>"; };
-		E764944A29298417008A8D9E /* SkeletonTreeNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SkeletonTreeNode+Extensions.swift"; sourceTree = "<group>"; };
 		E764944C292984C6008A8D9E /* SkeletonLayerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonLayerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,13 +167,13 @@
 			path = AssociatedObject;
 			sourceTree = "<group>";
 		};
-		E761D9D9292A38D1005F9A4D /* Szizzle */ = {
+		E761D9D9292A38D1005F9A4D /* Swizzle */ = {
 			isa = PBXGroup;
 			children = (
 				E764943229298143008A8D9E /* UIView+Swizzling.swift */,
 				E764944029298287008A8D9E /* Swizzling.swift */,
 			);
-			path = Szizzle;
+			path = Swizzle;
 			sourceTree = "<group>";
 		};
 		E761D9DA292A3C67005F9A4D /* RecoverState */ = {
@@ -199,7 +191,7 @@
 				E7649410292977AA008A8D9E /* SkeletonConfig.swift */,
 				E76493ED292972CF008A8D9E /* SkeletonView.swift */,
 				E761D9DA292A3C67005F9A4D /* RecoverState */,
-				E761D9D9292A38D1005F9A4D /* Szizzle */,
+				E761D9D9292A38D1005F9A4D /* Swizzle */,
 				E761D9D8292A386C005F9A4D /* AssociatedObject */,
 				E7649457292986CC008A8D9E /* Skeleton */,
 				E764945629298601008A8D9E /* Extension */,
@@ -218,7 +210,6 @@
 				E76493F329297357008A8D9E /* SkeletonCollectionViewProtocols.swift */,
 				E76493EB29297295008A8D9E /* UICollectionView+Extensions.swift */,
 				E76494002929751A008A8D9E /* UICollectionView+CollectionSkeleton.swift */,
-				E76493F62929738C008A8D9E /* SkeletonReusableCell.swift */,
 				E76493F72929738C008A8D9E /* SkeletonCollectionDataSource.swift */,
 				E76493F82929738C008A8D9E /* SkeletonCollectionDelegate.swift */,
 				E76493F92929738C008A8D9E /* CollectionSkeleton.swift */,
@@ -238,7 +229,6 @@
 				E76494462929836B008A8D9E /* UILabel+IBInspectable.swift */,
 				E764943C29298226008A8D9E /* UILabel+Extensions.swift */,
 				E7649424292979D3008A8D9E /* CALayer+Extensions.swift */,
-				E76494082929768F008A8D9E /* CALayer+Animations.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -253,9 +243,7 @@
 				E76493F129297334008A8D9E /* SkeletonGradient.swift */,
 				E76494222929797F008A8D9E /* SkeletonTextLineHeight.swift */,
 				E764941E292978F7008A8D9E /* SkeletonLayer.swift */,
-				E764942E29297AFA008A8D9E /* SkeletonTreeNode.swift */,
 				E764942C29297AAE008A8D9E /* SkeletonTextNumberOfLines.swift */,
-				E764944A29298417008A8D9E /* SkeletonTreeNode+Extensions.swift */,
 				E764942A29297A77008A8D9E /* SkeletonTextNode.swift */,
 				E764942829297A20008A8D9E /* SkeletonMultilineLayerBuilder.swift */,
 				E7649426292979F4008A8D9E /* SkeletonMultilinesLayerConfig.swift */,
@@ -347,12 +335,10 @@
 				E76493EC29297295008A8D9E /* UICollectionView+Extensions.swift in Sources */,
 				E764943529298162008A8D9E /* UIView+CollectionSkeleton.swift in Sources */,
 				E7649427292979F4008A8D9E /* SkeletonMultilinesLayerConfig.swift in Sources */,
-				E764944B29298417008A8D9E /* SkeletonTreeNode+Extensions.swift in Sources */,
 				E75A9A7F291DF221006C6825 /* TestViewController.swift in Sources */,
 				E76493F229297334008A8D9E /* SkeletonGradient.swift in Sources */,
 				E76493FD2929738C008A8D9E /* CollectionSkeleton.swift in Sources */,
 				E764940D2929774F008A8D9E /* SkeletonAppearance.swift in Sources */,
-				E764942F29297AFA008A8D9E /* SkeletonTreeNode.swift in Sources */,
 				E75A9A7B291DF221006C6825 /* AppDelegate.swift in Sources */,
 				E764941D292978D9008A8D9E /* AssociationPolicy.swift in Sources */,
 				E764943329298143008A8D9E /* UIView+Swizzling.swift in Sources */,
@@ -360,7 +346,6 @@
 				E76493EE292972CF008A8D9E /* SkeletonView.swift in Sources */,
 				E764941729297825008A8D9E /* UIView+Extensions.swift in Sources */,
 				E7649439292981B8008A8D9E /* RecoverableViewState.swift in Sources */,
-				E76493FA2929738C008A8D9E /* SkeletonReusableCell.swift in Sources */,
 				E76493F429297357008A8D9E /* SkeletonCollectionViewProtocols.swift in Sources */,
 				E764942D29297AAE008A8D9E /* SkeletonTextNumberOfLines.swift in Sources */,
 				E764942129297934008A8D9E /* UIColor+Skeleton.swift in Sources */,
@@ -377,7 +362,6 @@
 				E764943D29298226008A8D9E /* UILabel+Extensions.swift in Sources */,
 				E76493FB2929738C008A8D9E /* SkeletonCollectionDataSource.swift in Sources */,
 				E764944129298287008A8D9E /* Swizzling.swift in Sources */,
-				E76494092929768F008A8D9E /* CALayer+Animations.swift in Sources */,
 				E7649405292975A7008A8D9E /* UIView+SkeletonView.swift in Sources */,
 				E76493FF292973B8008A8D9E /* SkeletonExtended.swift in Sources */,
 				E76494472929836B008A8D9E /* UILabel+IBInspectable.swift in Sources */,

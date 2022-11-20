@@ -10,18 +10,6 @@ import UIKit
  
 extension UICollectionView: CollectionSkeleton {
 
-    var estimatedNumberOfRows: Int {
-        guard let flowlayout = collectionViewLayout as? UICollectionViewFlowLayout else { return 0 }
-        switch flowlayout.scrollDirection {
-        case .vertical:
-            return Int(ceil(frame.height / flowlayout.itemSize.height))
-        case .horizontal:
-            return Int(ceil(frame.width / flowlayout.itemSize.width))
-        default:
-            return 0
-        }
-    }
-    
     var skeletonDataSource: SkeletonCollectionDataSource? {
         get { return ao_get(pkey: &CollectionAssociatedKeys.dummyDataSource) as? SkeletonCollectionDataSource }
         set {

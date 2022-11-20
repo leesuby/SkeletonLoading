@@ -13,6 +13,8 @@
 
 import UIKit
 
+extension UIView: SkeletonViewExtended { }
+
 extension UIView {
     
     func showSkeleton(

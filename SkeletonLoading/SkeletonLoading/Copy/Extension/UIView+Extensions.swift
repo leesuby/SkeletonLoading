@@ -13,14 +13,6 @@
 
 import UIKit
 
-extension SkeletonViewExtension where ExtendedType: UIView {
-    
-    var treeNode: SkeletonTreeNode<ExtendedType> {
-        SkeletonTreeNode<ExtendedType>(self.type)
-    }
-    
-}
-
 extension UIView {
 
     /// Flags
