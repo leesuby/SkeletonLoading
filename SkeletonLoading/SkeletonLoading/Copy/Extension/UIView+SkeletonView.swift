@@ -41,12 +41,12 @@ extension UIView {
         }
     }
 
-    func recursiveHideSkeleton(reloadDataAfter reload: Bool, transition: SkeletonTransitionStyle, root: UIView? = nil) {
+    func recursiveHideSkeleton(reloadDataAfter reload: Bool, root: UIView? = nil) {
         guard sk.isSkeletonActive else { return }
         if isHiddenWhenSkeletonIsActive {
             isHidden = false
         }
-        _currentSkeletonConfig?.transition = transition
+       
         unSwizzleLayoutSubviews()
         unSwizzleTraitCollectionDidChange()
         removeDummyDataSourceIfNeeded(reloadAfter: reload)
@@ -54,7 +54,7 @@ extension UIView {
             recoverViewState(forced: false)
             removeSkeletonLayer()
         }) { subview in
-            subview.recursiveHideSkeleton(reloadDataAfter: reload, transition: transition)
+            subview.recursiveHideSkeleton(reloadDataAfter: reload)
         }
     }
     

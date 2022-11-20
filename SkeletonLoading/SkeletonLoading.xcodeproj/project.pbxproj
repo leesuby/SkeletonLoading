@@ -17,6 +17,7 @@
 		E75E68D2292954C10089EE8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E68CF292954C10089EE8D /* ViewController.swift */; };
 		E75E68D3292954C10089EE8D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E68D0292954C10089EE8D /* CollectionViewCell.swift */; };
 		E75E68D4292954C10089EE8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75E68D1292954C10089EE8D /* Main.storyboard */; };
+		E761D9DE292AA8F5005F9A4D /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761D9DD292AA8F5005F9A4D /* Skeleton.swift */; };
 		E76493E82929720C008A8D9E /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493E72929720C008A8D9E /* UIView+IBInspectable.swift */; };
 		E76493EC29297295008A8D9E /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493EB29297295008A8D9E /* UICollectionView+Extensions.swift */; };
 		E76493EE292972CF008A8D9E /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76493ED292972CF008A8D9E /* SkeletonView.swift */; };
@@ -71,6 +72,7 @@
 		E75E68CF292954C10089EE8D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E75E68D0292954C10089EE8D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E75E68D1292954C10089EE8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E761D9DD292AA8F5005F9A4D /* Skeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skeleton.swift; sourceTree = "<group>"; };
 		E76493E72929720C008A8D9E /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		E76493EB29297295008A8D9E /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		E76493ED292972CF008A8D9E /* SkeletonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		E761D9DC292AA782005F9A4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E761D9DD292AA8F5005F9A4D /* Skeleton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				E764943B292981F2008A8D9E /* UIView+Transitions.swift in Sources */,
 				E76494372929819E008A8D9E /* Recoverable.swift in Sources */,
 				E76494072929765A008A8D9E /* SkeletonAnimationBuilder.swift in Sources */,
+				E761D9DE292AA8F5005F9A4D /* Skeleton.swift in Sources */,
 				E76493E82929720C008A8D9E /* UIView+IBInspectable.swift in Sources */,
 				E764943D29298226008A8D9E /* UILabel+Extensions.swift in Sources */,
 				E76493FB2929738C008A8D9E /* SkeletonCollectionDataSource.swift in Sources */,

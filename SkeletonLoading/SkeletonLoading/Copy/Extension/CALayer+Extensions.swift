@@ -82,14 +82,15 @@ extension CALayer {
         DispatchQueue.main.async { CATransaction.commit() }
     }
     
-    func insertSkeletonLayer(_ sublayer: SkeletonLayer, atIndex index: UInt32, transition: SkeletonTransitionStyle, completion: (() -> Void)? = nil) {
+    func insertSkeletonLayer(_ sublayer: SkeletonLayer, atIndex index: UInt32, completion: (() -> Void)? = nil) {
         insertSublayer(sublayer.contentLayer, at: index)
-        switch transition {
-        case .none:
-            DispatchQueue.main.async { completion?() }
-        case .crossDissolve(let duration):
-            sublayer.contentLayer.setOpacity(from: 0, to: 1, duration: duration, completion: completion)
-        }
+        sublayer.contentLayer.setOpacity(from: 0, to: 1, duration: 0.25, completion: completion)
+//        switch transition {
+//        case .none:
+//            DispatchQueue.main.async { completion?() }
+//        case .crossDissolve(let duration):
+//            sublayer.contentLayer.setOpacity(from: 0, to: 1, duration: duration, completion: completion)
+//        }
     }
     
 }

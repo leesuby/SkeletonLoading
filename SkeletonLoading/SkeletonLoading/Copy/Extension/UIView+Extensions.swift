@@ -118,8 +118,7 @@ extension UIView {
         self._skeletonLayer = skeletonLayer
         layer.insertSkeletonLayer(
             skeletonLayer,
-            atIndex: UInt32.max,
-            transition: config.transition
+            atIndex: UInt32.max
         ) { [weak self] in
             guard let self = self else { return }
             
@@ -146,11 +145,10 @@ extension UIView {
     
     func removeSkeletonLayer() {
         guard sk.isSkeletonActive,
-            let skeletonLayer = _skeletonLayer,
-            let transitionStyle = _currentSkeletonConfig?.transition else { return }
+            let skeletonLayer = _skeletonLayer else { return }
         skeletonLayer.stopAnimation()
         _status = .off
-        skeletonLayer.removeLayer(transition: transitionStyle) {
+        skeletonLayer.removeLayer() {
             self._skeletonLayer = nil
             self._currentSkeletonConfig = nil
         }

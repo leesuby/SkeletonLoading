@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     func hideSkeleton() {
-        view.hideSkeleton(transition: .crossDissolve(transitionDurationStepper.value))
+        view.hideSkeleton()
     }
     
     func refreshSkeleton() {
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     
     func showGradientSkeleton() {
         let gradient = SkeletonGradient(baseColor: .clouds)
-        view.showAnimatedGradientSkeleton(usingGradient: gradient, transition: .crossDissolve(transitionDurationStepper.value))
+        view.showAnimatedGradientSkeleton(usingGradient: gradient)
     }
 }
  

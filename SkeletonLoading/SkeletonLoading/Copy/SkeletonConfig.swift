@@ -8,12 +8,11 @@ struct SkeletonConfig {
     /// Colors used in skeleton layer
     let colors: [UIColor]
     
-    ///  Transition style
-    var transition: SkeletonTransitionStyle
+//    ///  Transition style
+//    var transition: SkeletonTransitionStyle
     
-    init(colors: [UIColor],
-         transition: SkeletonTransitionStyle = .crossDissolve(0.25)) {
+    init(colors: [UIColor]) {
         self.colors = colors
-        self.transition = transition
+//        self.transition = transition
     }
 }

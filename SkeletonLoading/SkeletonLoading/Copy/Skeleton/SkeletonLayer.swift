@@ -39,17 +39,18 @@ struct SkeletonLayer {
         updateLinesIfNeeded()
     }
     
-    func removeLayer(transition: SkeletonTransitionStyle, completion: (() -> Void)? = nil) {
-        switch transition {
-        case .none:
-            maskLayer.removeFromSuperlayer()
+    func removeLayer(completion: (() -> Void)? = nil) {
+        maskLayer.setOpacity(from: 1, to: 0, duration: 0.25) {
+            self.maskLayer.removeFromSuperlayer()
             completion?()
-        case .crossDissolve(let duration):
-            maskLayer.setOpacity(from: 1, to: 0, duration: duration) {
-                self.maskLayer.removeFromSuperlayer()
-                completion?()
-            }
         }
+//        switch transition {
+//        case .none:
+//            maskLayer.removeFromSuperlayer()
+//            completion?()
+//        case .crossDissolve(let duration):
+//
+//        }
     }
 
     /// If there is more than one line, or custom preferences have been set for a single line, draw custom layers
