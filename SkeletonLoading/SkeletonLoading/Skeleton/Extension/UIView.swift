@@ -10,30 +10,21 @@ import UIKit
 
 
 //MARK: Generic Type
-/// Type that acts as a generic extension point for all `SkeletonViewExtended` types.
 public struct SkeletonViewExtension<ExtendedType> {
-    /// Stores the type or meta-type of any extended type.
     public private(set) var type: ExtendedType
 
-    /// Create an instance from the provided value.
-    ///
-    /// - Parameter type: Instance being extended.
     public init(_ type: ExtendedType) {
         self.type = type
     }
 }
 
-/// Protocol describing the `sk` extension points for SkeletonView extended types.
 public protocol SkeletonViewExtended {
-    /// Type being extended.
     associatedtype ExtendedType
 
-    /// Instance SkeletonView extension point.
     var sk: SkeletonViewExtension<ExtendedType> { get set }
 }
 
 extension SkeletonViewExtended {
-    /// Instance SkeletonView extension point.
     public var sk: SkeletonViewExtension<Self> {
         get { SkeletonViewExtension(self) }
         
@@ -48,8 +39,6 @@ public extension SkeletonViewExtension where ExtendedType: UIView {
     }
     
 }
-
-
 
 //MARK: Swizzle
 extension UIView {
@@ -201,15 +190,13 @@ extension UIView: SkeletonViewExtended { }
 extension UIView {
     
     func showSkeleton(
-        skeletonConfig config: SkeletonConfig,
-        notifyDelegate: Bool = true
+        skeletonConfig config: SkeletonConfig
     ) {
         recursiveShowSkeleton(skeletonConfig: config, root: self)
     }
 
     func updateSkeleton(
-        skeletonConfig config: SkeletonConfig,
-        notifyDelegate: Bool = true
+        skeletonConfig config: SkeletonConfig
     ) {
         recursiveUpdateSkeleton(skeletonConfig: config, root: self)
     }
@@ -411,8 +398,6 @@ extension UIView {
         ) { [weak self] in
             guard let self = self else { return }
             
-            // Workaround to fix the problem when inserting a sublayer and
-            // the content offset is modified by the system.
             (self as? UITextView)?.setContentOffset(.zero, animated: false)
             self.startSkeletonAnimation()
             

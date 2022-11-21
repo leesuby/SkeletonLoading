@@ -127,13 +127,13 @@
 			children = (
 				E761D9E7292AB2B6005F9A4D /* Extension */,
 				E761D9DF292AAEC4005F9A4D /* Helper */,
-				E761D9DC292AA782005F9A4D /* Model */,
+				E761D9DC292AA782005F9A4D /* Universal */,
 				E761D9E8292AB2DE005F9A4D /* SkeletonLoading.swift */,
 			);
 			path = Skeleton;
 			sourceTree = "<group>";
 		};
-		E761D9DC292AA782005F9A4D /* Model */ = {
+		E761D9DC292AA782005F9A4D /* Universal */ = {
 			isa = PBXGroup;
 			children = (
 				E761D9DD292AA8F5005F9A4D /* SkeletonConfig.swift */,
@@ -142,8 +142,9 @@
 				E761D9ED292AB4F3005F9A4D /* Appearance.swift */,
 				E761D9F3292AB6F2005F9A4D /* Layer.swift */,
 				E761D9F5292AB8F3005F9A4D /* TextManager.swift */,
+				E761D9EF292AB5E0005F9A4D /* AnimationCreator.swift */,
 			);
-			path = Model;
+			path = Universal;
 			sourceTree = "<group>";
 		};
 		E761D9DF292AAEC4005F9A4D /* Helper */ = {
@@ -151,7 +152,6 @@
 			children = (
 				E761D9E0292AAF48005F9A4D /* Association.swift */,
 				E761D9E2292AAF89005F9A4D /* Swizzle.swift */,
-				E761D9EF292AB5E0005F9A4D /* AnimationCreator.swift */,
 				E761D9FD292ABC08005F9A4D /* Recursive.swift */,
 			);
 			path = Helper;
@@ -160,8 +160,8 @@
 		E761D9E7292AB2B6005F9A4D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E761D9EB292AB342005F9A4D /* UIView.swift */,
 				E761D9F7292AB951005F9A4D /* UIColor.swift */,
+				E761D9EB292AB342005F9A4D /* UIView.swift */,
 				E761D9FB292ABBA2005F9A4D /* UILabel.swift */,
 				E761D9F9292ABB85005F9A4D /* CALayer.swift */,
 				E761D9FF292ABC3C005F9A4D /* DispatchQueue.swift */,

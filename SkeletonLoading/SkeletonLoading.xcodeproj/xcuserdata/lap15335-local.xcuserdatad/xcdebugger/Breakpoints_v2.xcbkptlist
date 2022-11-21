@@ -203,20 +203,20 @@
             filePath = "SkeletonLoading/TestViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FF03DC75-6119-4A2E-8753-5135CD724827 - 6757d8f2361a539"
+                  uuid = "FF03DC75-6119-4A2E-8753-5135CD724827 - 56eb640da0832530"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SkeletonLoading.TestViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
                   moduleName = "SkeletonLoading"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoading/SkeletonLoading/TestViewController.swift"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/TestViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "108"
@@ -224,14 +224,14 @@
                   offsetFromSymbolStart = "172">
                </Location>
                <Location
-                  uuid = "FF03DC75-6119-4A2E-8753-5135CD724827 - 6757d8f2361a539"
+                  uuid = "FF03DC75-6119-4A2E-8753-5135CD724827 - 56eb640da0832530"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SkeletonLoading.TestViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
                   moduleName = "SkeletonLoading"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoading/SkeletonLoading/TestViewController.swift"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/TestViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "108"
@@ -271,6 +271,374 @@
             endingLineNumber = "16"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5596C24-DAA6-4CB6-B7EC-607468FC3EB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/UIColor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "UIColor"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E7D3A22-4653-4AAE-915E-6A28CC67A6D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/CollectionViewProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "collectionSkeletonView(_:skeletonCellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5AE8B86-E4C9-49E7-9BA4-D97ECBA40976"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/CollectionViewProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "SkeletonCollectionViewDataSource"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE32282C-72C1-40C9-8858-AC8E4ADF9D03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/CollectionViewProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "collectionSkeletonView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21F5A16F-1493-4C14-ADA6-CF529079391F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/CollectionViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21049576-8DAE-4F84-A436-4FD3607ADFBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/TestViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "collectionSkeletonView(_:skeletonCellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "21049576-8DAE-4F84-A436-4FD3607ADFBF - f10ea9590d5532c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkeletonLoading.TestViewController.collectionSkeletonView(_: __C.UICollectionView, skeletonCellForItemAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UICollectionViewCell&gt;"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "21049576-8DAE-4F84-A436-4FD3607ADFBF - f10ea9590d5532c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkeletonLoading.TestViewController.collectionSkeletonView(_: __C.UICollectionView, skeletonCellForItemAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UICollectionViewCell&gt;"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "628">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53E40F2B-2D95-42F6-AB88-3DFA885F4419"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "prepareSkeleton(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "53E40F2B-2D95-42F6-AB88-3DFA885F4419 - a3fead3502ac606"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UICollectionView.prepareSkeleton(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "53E40F2B-2D95-42F6-AB88-3DFA885F4419 - a3fead3502ac606"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UICollectionView.prepareSkeleton(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "316">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDC2F3D5-49DE-4057-A055-143A8BCBD9BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "prepareSkeleton(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C34D9481-C4B0-49B0-8A82-C4F47400D830"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "addDummyDataSource()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C34D9481-C4B0-49B0-8A82-C4F47400D830 - f0949607345898e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UICollectionView.addDummyDataSource() -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "C34D9481-C4B0-49B0-8A82-C4F47400D830 - f0949607345898e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UICollectionView.addDummyDataSource() -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "671A431C-E728-4519-9CD7-3E1E4ED04BAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "removeDummyDataSourceIfNeeded(reloadAfter:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "671A431C-E728-4519-9CD7-3E1E4ED04BAD - 5db22731c82bfd8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIView.removeDummyDataSourceIfNeeded(reloadAfter: Swift.Bool) -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "671A431C-E728-4519-9CD7-3E1E4ED04BAD - 5db22731c82bfd8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIView.removeDummyDataSourceIfNeeded(reloadAfter: Swift.Bool) -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "667EC9B5-85DA-4FF6-871F-FFBE2055604C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "removeDummyDataSourceIfNeeded(reloadAfter:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD5FC43A-F245-46F1-909C-90572732508F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "removeDummyDataSource(reloadAfter:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91AFA75D-14F4-4168-9094-4AFD39E33CD6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/UICollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "prepareSkeleton(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "363BAC42-0750-4755-AE5C-9F85152C4F48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/UIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C44F663B-52AF-48B9-BE37-F02AD28D95D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/UIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

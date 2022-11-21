@@ -30,7 +30,7 @@ class TestViewController: UIViewController {
         collectionView.delegate = self
         collectionView.isSkeletonable = true
         collectionView.prepareSkeleton(completion: { done in
-            self.view.showAnimatedGradientSkeleton()
+            self.view.showSkeleton()
         })
         
         view.addSubview(collectionView)
@@ -47,13 +47,14 @@ class TestViewController: UIViewController {
     
     func showGradientSkeleton() {
         let gradient = SkeletonGradient(baseColor: .clouds)
-        view.showAnimatedGradientSkeleton(usingGradient: gradient)
+        view.showSkeleton(usingGradient: gradient)
         
     }
     
     @objc func refreshSkeleton() {
         self.view.hideSkeleton()
-        showGradientSkeleton()
+    
+        
     }
     
     func hideSkeleton() {
@@ -78,25 +79,18 @@ extension TestViewController : SkeletonCollectionViewDataSource{
     }
     
     func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.count
+        return 5
     }
     
     func collectionSkeletonView(_ skeletonView: UICollectionView, skeletonCellForItemAt indexPath: IndexPath) -> UICollectionViewCell? {
         var cell = UICollectionViewCell()
         if let userCell = collectionView.dequeueReusableCell(withReuseIdentifier: "userCell", for: indexPath) as? UserCell{
             
-            userCell.config(user: dataSource[indexPath.row])
             userCell.isSkeletonable = true
             cell = userCell
-           
         }
         
         return cell
-    }
-    
-    func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
-        let cell = cell as? UserCell
-        cell?.isSkeletonable = true
     }
     
     //UICollectionView

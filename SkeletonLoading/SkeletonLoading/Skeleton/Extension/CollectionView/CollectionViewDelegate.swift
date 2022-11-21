@@ -23,18 +23,4 @@ class SkeletonCollectionDelegate: NSObject {
 // MARK: - UICollectionViewDelegate
 extension SkeletonCollectionDelegate: UICollectionViewDelegate { }
 
-private extension SkeletonCollectionDelegate {
-    
-    func skeletonizeViewIfContainerSkeletonIsActive(container: UIView, view: UIView) {
-        guard container.sk.isSkeletonActive,
-              let skeletonConfig = container._currentSkeletonConfig
-        else {
-            return
-        }
 
-        view.showSkeleton(
-            skeletonConfig: skeletonConfig,
-            notifyDelegate: false
-        )
-    }
-}

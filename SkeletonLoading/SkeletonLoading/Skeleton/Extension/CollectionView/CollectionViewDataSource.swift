@@ -48,13 +48,10 @@ extension SkeletonCollectionDataSource: UICollectionViewDataSource {
             let cellIdentifier = originalCollectionViewDataSource?.collectionSkeletonView(collectionView, cellIdentifierForItemAt: indexPath) ?? ""
             let fakeCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
 
-            originalCollectionViewDataSource?.collectionSkeletonView(collectionView, prepareCellForSkeleton: fakeCell, at: indexPath)
             skeletonizeViewIfContainerSkeletonIsActive(container: collectionView, view: fakeCell)
-            
             return fakeCell
         }
 
-        originalCollectionViewDataSource?.collectionSkeletonView(collectionView, prepareCellForSkeleton: cell, at: indexPath)
         skeletonizeViewIfContainerSkeletonIsActive(container: collectionView, view: cell)
         return cell
     }
@@ -69,8 +66,7 @@ extension SkeletonCollectionDataSource {
         }
 
         view.showSkeleton(
-            skeletonConfig: skeletonConfig,
-            notifyDelegate: false
+            skeletonConfig: skeletonConfig
         )
     }
 }

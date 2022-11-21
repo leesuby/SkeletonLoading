@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         transitionDurationStepper.value = 0.25
         
         collectionView.prepareSkeleton(completion: { done in
-            self.view.showAnimatedGradientSkeleton()
+            self.view.showSkeleton()
         })
     }
     
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     
     func showGradientSkeleton() {
         let gradient = SkeletonGradient(baseColor: .clouds)
-        view.showAnimatedGradientSkeleton(usingGradient: gradient)
+        view.showSkeleton(usingGradient: gradient)
     }
 }
  
@@ -109,9 +109,10 @@ extension ViewController: SkeletonCollectionViewDataSource {
     func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
-
+    
     func collectionSkeletonView(_ skeletonView: UICollectionView, skeletonCellForItemAt indexPath: IndexPath) -> UICollectionViewCell? {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell
+        cell?.isSkeletonable = true
         return cell
     }
     
@@ -126,8 +127,5 @@ extension ViewController: SkeletonCollectionViewDataSource {
         return cell
     }
 
-    func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
-        let cell = cell as? CollectionViewCell
-        cell?.isSkeletonable = true
-    }
+    
 }

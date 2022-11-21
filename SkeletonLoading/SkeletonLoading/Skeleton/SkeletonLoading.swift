@@ -9,21 +9,13 @@ import Foundation
 import UIKit
 
 public extension UIView {
-    /// Shows the gradient skeleton without animation using the view that calls this method as root view.
-    ///
-    /// If animation is nil, sliding animation will be used, with direction left to right.
-    ///
-    /// - Parameters:
-    ///   - gradient: The gradient of the skeleton. Defaults to `SkeletonAppearance.default.gradient`.
-    ///   - animation: The animation of the skeleton. Defaults to `nil`.
-    ///   - transition: The style of the transition when the skeleton appears. Defaults to `.crossDissolve(0.25)`.
-    func showAnimatedGradientSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient) {
+    func showSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient) {
         _delayedShowSkeletonWorkItem?.cancel()
         let config = SkeletonConfig(colors: gradient.colors)
         showSkeleton(skeletonConfig: config)
     }
 
-    func updateAnimatedGradientSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient) {
+    func updateSkeleton(usingGradient gradient: SkeletonGradient = SkeletonAppearance.default.gradient) {
         let config = SkeletonConfig(colors: gradient.colors)
         updateSkeleton(skeletonConfig: config)
     }

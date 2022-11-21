@@ -19,7 +19,6 @@ struct SkeletonMultilinesLayerConfig {
     var alignment: NSTextAlignment
     var shouldCenterVertically: Bool
 
-    /// Returns padding insets taking into account if the RTL is activated
     var calculatedPaddingInsets: UIEdgeInsets {
         UIEdgeInsets(top: paddingInsets.top,
                      left: paddingInsets.left,
