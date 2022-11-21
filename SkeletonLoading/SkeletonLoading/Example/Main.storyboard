@@ -76,76 +76,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-MK-YzZ">
                                 <rect key="frame" x="0.0" y="507" width="375" height="160"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fMR-vj-7de">
-                                        <rect key="frame" x="20" y="21" width="145" height="32"/>
-                                        <segments>
-                                            <segment title="Solid"/>
-                                            <segment title="Gradient"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="changeSkeletonType:" destination="irH-dz-xqL" eventType="valueChanged" id="lfR-JV-DU4"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBe-RM-BG8">
-                                        <rect key="frame" x="308" y="21" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="changeAnimated:" destination="irH-dz-xqL" eventType="valueChanged" id="dlH-KK-iee"/>
-                                        </connections>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-Ze-UIK">
-                                        <rect key="frame" x="229" y="26" width="73" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUR-Qo-gHK">
-                                        <rect key="frame" x="20" y="61" width="100" height="52"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="GvX-hq-2Qn"/>
-                                            <constraint firstAttribute="height" constant="52" id="UQe-Cf-riE"/>
-                                        </constraints>
-                                        <connections>
-                                            <action selector="btnChangeColorTouchUpInside:" destination="irH-dz-xqL" eventType="touchUpInside" id="Xca-QC-htl"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPs-17-vfs">
-                                        <rect key="frame" x="263" y="72" width="94" height="30"/>
+                                        <rect key="frame" x="140.5" y="65" width="94" height="30"/>
                                         <state key="normal" title="Hide skeleton"/>
                                         <connections>
-                                            <action selector="showOrHideSkeleton:" destination="irH-dz-xqL" eventType="touchUpInside" id="lHc-k2-OgV"/>
+                                            <action selector="showOrHideSkeleton:" destination="irH-dz-xqL" eventType="touchUpInside" id="KEx-IA-G5z"/>
                                         </connections>
                                     </button>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" maximumValue="5" stepValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="3mz-9M-e7Q">
-                                        <rect key="frame" x="263" y="123" width="94" height="32"/>
-                                        <connections>
-                                            <action selector="transitionDurationStepperAction:" destination="irH-dz-xqL" eventType="valueChanged" id="Ll0-Pr-d0V"/>
-                                        </connections>
-                                    </stepper>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade Duration: 0.25 sec" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gN-Jz-44y">
-                                        <rect key="frame" x="92.5" y="130" width="162.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="3mz-9M-e7Q" firstAttribute="leading" secondItem="5gN-Jz-44y" secondAttribute="trailing" constant="8" id="65e-Nj-bKG"/>
-                                    <constraint firstItem="fMR-vj-7de" firstAttribute="leading" secondItem="JjA-MK-YzZ" secondAttribute="leading" constant="20" id="AyG-hI-tte"/>
-                                    <constraint firstItem="aUR-Qo-gHK" firstAttribute="leading" secondItem="fMR-vj-7de" secondAttribute="leading" id="C1b-Hl-jEg"/>
-                                    <constraint firstItem="3mz-9M-e7Q" firstAttribute="trailing" secondItem="nPs-17-vfs" secondAttribute="trailing" id="KuK-fc-jOQ"/>
-                                    <constraint firstItem="nPs-17-vfs" firstAttribute="centerY" secondItem="aUR-Qo-gHK" secondAttribute="centerY" id="MQX-E5-IDE"/>
                                     <constraint firstAttribute="height" constant="160" id="QDV-wu-e3I"/>
-                                    <constraint firstItem="5gN-Jz-44y" firstAttribute="centerY" secondItem="3mz-9M-e7Q" secondAttribute="centerY" id="TGP-Ep-0ob"/>
-                                    <constraint firstItem="nPs-17-vfs" firstAttribute="top" secondItem="KBe-RM-BG8" secondAttribute="bottom" constant="20" id="TPg-wY-9bc"/>
-                                    <constraint firstItem="KBe-RM-BG8" firstAttribute="leading" secondItem="GSj-Ze-UIK" secondAttribute="trailing" constant="6" id="ehg-tW-7kq"/>
-                                    <constraint firstItem="GSj-Ze-UIK" firstAttribute="centerY" secondItem="KBe-RM-BG8" secondAttribute="centerY" id="esk-GV-DBS"/>
-                                    <constraint firstAttribute="trailing" secondItem="KBe-RM-BG8" secondAttribute="trailing" constant="18" id="hhE-rV-dV7"/>
-                                    <constraint firstItem="KBe-RM-BG8" firstAttribute="top" secondItem="JjA-MK-YzZ" secondAttribute="top" constant="21" id="pBQ-H8-xTK"/>
-                                    <constraint firstAttribute="bottom" secondItem="3mz-9M-e7Q" secondAttribute="bottom" constant="5" id="pQ9-a6-hM4"/>
-                                    <constraint firstItem="fMR-vj-7de" firstAttribute="centerY" secondItem="GSj-Ze-UIK" secondAttribute="centerY" id="q2v-t1-Zu0"/>
+                                    <constraint firstItem="nPs-17-vfs" firstAttribute="centerX" secondItem="JjA-MK-YzZ" secondAttribute="centerX" id="lTs-V0-p2o"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="qR5-cz-YAm"/>
-                                    <constraint firstItem="nPs-17-vfs" firstAttribute="trailing" secondItem="KBe-RM-BG8" secondAttribute="trailing" id="yls-k6-ZfC"/>
+                                    <constraint firstItem="nPs-17-vfs" firstAttribute="centerY" secondItem="JjA-MK-YzZ" secondAttribute="centerY" id="xoQ-CB-Lgn"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -163,18 +107,11 @@
                             <constraint firstItem="2Gq-Y8-1TU" firstAttribute="trailing" secondItem="HKL-L0-T2w" secondAttribute="trailing" id="bNo-98-pE4"/>
                             <constraint firstItem="HKL-L0-T2w" firstAttribute="leading" secondItem="2Gq-Y8-1TU" secondAttribute="leading" id="iIq-cx-paX"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="avatarImage" destination="Ql9-Jy-aWM" id="7oB-fr-lys"/>
                         <outlet property="collectionView" destination="HKL-L0-T2w" id="Mnp-W9-80f"/>
                         <outlet property="showOrHideSkeletonButton" destination="nPs-17-vfs" id="vin-af-O6Z"/>
-                        <outlet property="skeletonTypeSelector" destination="fMR-vj-7de" id="Gg4-xc-gRF"/>
-                        <outlet property="switchAnimated" destination="KBe-RM-BG8" id="CKz-GL-sUL"/>
-                        <outlet property="transitionDurationLabel" destination="5gN-Jz-44y" id="lBb-rU-wBp"/>
-                        <outlet property="transitionDurationStepper" destination="3mz-9M-e7Q" id="uaY-qE-wfh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkM-Y0-M5i" userLabel="First Responder" sceneMemberID="firstResponder"/>

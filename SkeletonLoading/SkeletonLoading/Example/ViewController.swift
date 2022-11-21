@@ -25,56 +25,26 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    @IBOutlet weak var switchAnimated: UISwitch!
-    @IBOutlet weak var skeletonTypeSelector: UISegmentedControl!
     @IBOutlet weak var showOrHideSkeletonButton: UIButton!
-    @IBOutlet weak var transitionDurationLabel: UILabel!
-    @IBOutlet weak var transitionDurationStepper: UIStepper!
+    
+    @IBAction func showOrHideSkeleton(_ sender: Any) {
+        showOrHideSkeletonButton.setTitle((view.sk.isSkeletonActive ? "Show skeleton" : "Hide skeleton"), for: .normal)
+        view.sk.isSkeletonActive ? hideSkeleton() : showGradientSkeleton()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        transitionDurationStepper.value = 0.25
+        
+        view.isSkeletonable = true
         
         collectionView.prepareSkeleton(completion: { done in
             self.view.showSkeleton()
         })
     }
     
-    @IBAction func changeAnimated(_ sender: Any) {
-  
-        view.startSkeletonAnimation()
-    }
-    
-    @IBAction func changeSkeletonType(_ sender: Any) {
-        refreshSkeleton()
-    }
-    
-    @IBAction func btnChangeColorTouchUpInside(_ sender: Any) {
-    }
-    
-    @IBAction func showOrHideSkeleton(_ sender: Any) {
-        showOrHideSkeletonButton.setTitle((view.sk.isSkeletonActive ? "Show skeleton" : "Hide skeleton"), for: .normal)
-        view.sk.isSkeletonActive ? hideSkeleton() : showSkeleton()
-    }
-    
-    @IBAction func transitionDurationStepperAction(_ sender: Any) {
-        transitionDurationLabel.text = "transition duration: \(transitionDurationStepper.value) sec"
-    }
-    
-    func showSkeleton() {
-        refreshSkeleton()
-    }
-    
     func hideSkeleton() {
         view.hideSkeleton()
     }
-    
-    func refreshSkeleton() {
-        self.view.hideSkeleton()
-        showGradientSkeleton() 
-    }
-    
     
     func showGradientSkeleton() {
         let gradient = SkeletonGradient(baseColor: .clouds)
@@ -84,7 +54,6 @@ class ViewController: UIViewController {
  
 
 // MARK: - UICollectionViewDelegateFlowLayout
-
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width/3 - 10, height: view.frame.width/3 - 10)
@@ -100,8 +69,11 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: - SkeletonCollectionViewDataSource
-
 extension ViewController: SkeletonCollectionViewDataSource {
+    func numSections(in collectionSkeletonView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
         return "CollectionViewCell"
     }
@@ -117,7 +89,6 @@ extension ViewController: SkeletonCollectionViewDataSource {
     }
     
     // MARK: - UICollectionViewDataSource
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -126,6 +97,4 @@ extension ViewController: SkeletonCollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         return cell
     }
-
-    
 }

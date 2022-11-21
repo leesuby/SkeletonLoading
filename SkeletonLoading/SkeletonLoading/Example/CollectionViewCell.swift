@@ -12,7 +12,6 @@ class CollectionViewCell: UICollectionViewCell {
         
         createLabel()
         createImageView()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,14 +24,11 @@ class CollectionViewCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         addSubview(imageView)
-        NSLayoutConstraint.activate([
-            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: topAnchor),
-            imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.75),
-            imageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.75)
-            ])
         
-        
+        imageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.75).isActive = true
+        imageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.75).isActive = true
     }
     
     private func createLabel() {
@@ -42,12 +38,11 @@ class CollectionViewCell: UICollectionViewCell {
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         addSubview(label)
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor),
-            label.heightAnchor.constraint(equalToConstant: 40),
-            label.widthAnchor.constraint(equalToConstant: frame.width)
-            ])
+        
+        label.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        label.widthAnchor.constraint(equalToConstant: frame.width).isActive = true
     }
     
 }
