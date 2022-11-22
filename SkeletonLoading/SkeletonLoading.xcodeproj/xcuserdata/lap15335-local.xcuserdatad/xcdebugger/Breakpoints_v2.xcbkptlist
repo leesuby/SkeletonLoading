@@ -657,5 +657,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5536F235-201E-4F72-99CF-7275F1194BF9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkeletonLoading/Skeleton/Extension/CALayer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "playAnimation(_:key:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5536F235-201E-4F72-99CF-7275F1194BF9 - 7f86e80e1075d5ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in __C.CALayer.playAnimation(_: (__C.CALayer) -&gt; __C.CAAnimation, key: Swift.String, completion: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CALayer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "5536F235-201E-4F72-99CF-7275F1194BF9 - 425c5e18e6cdfa59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in __C.CALayer.playAnimation(_: (__C.CALayer) -&gt; __C.CAAnimation, key: Swift.String, completion: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SkeletonLoading"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lap15335-local/Desktop/IOS/Swift/SkeletonLoadingGit/SkeletonLoading/SkeletonLoading/Skeleton/Extension/CALayer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
