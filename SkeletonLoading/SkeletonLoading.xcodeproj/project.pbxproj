@@ -35,6 +35,7 @@
 		E761DA07292ABDEE005F9A4D /* CollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761DA06292ABDEE005F9A4D /* CollectionViewProtocol.swift */; };
 		E761DA09292ABECB005F9A4D /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761DA08292ABECB005F9A4D /* CollectionViewDataSource.swift */; };
 		E761DA0B292ABEDD005F9A4D /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761DA0A292ABEDD005F9A4D /* CollectionViewDelegate.swift */; };
+		E761DA0E292B97C1005F9A4D /* RecoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761DA0D292B97C1005F9A4D /* RecoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		E761DA06292ABDEE005F9A4D /* CollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProtocol.swift; sourceTree = "<group>"; };
 		E761DA08292ABECB005F9A4D /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		E761DA0A292ABEDD005F9A4D /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
+		E761DA0D292B97C1005F9A4D /* RecoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				E761D9F9292ABB85005F9A4D /* CALayer.swift */,
 				E761D9FF292ABC3C005F9A4D /* DispatchQueue.swift */,
 				E761DA01292ABCC0005F9A4D /* PrepareView.swift */,
+				E761DA0D292B97C1005F9A4D /* RecoverView.swift */,
 				E761DA03292ABD40005F9A4D /* CollectionView */,
 			);
 			path = Extension;
@@ -263,6 +266,7 @@
 				E761DA02292ABCC0005F9A4D /* PrepareView.swift in Sources */,
 				E761D9E5292AB075005F9A4D /* RecoverState.swift in Sources */,
 				E761D9FA292ABB85005F9A4D /* CALayer.swift in Sources */,
+				E761DA0E292B97C1005F9A4D /* RecoverView.swift in Sources */,
 				E75A9A7B291DF221006C6825 /* AppDelegate.swift in Sources */,
 				E761D9E9292AB2DE005F9A4D /* SkeletonLoading.swift in Sources */,
 				E761D9FE292ABC08005F9A4D /* Recursive.swift in Sources */,

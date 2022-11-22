@@ -293,7 +293,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6E7D3A22-4653-4AAE-915E-6A28CC67A6D8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SkeletonLoading/Skeleton/Extension/CollectionView/CollectionViewProtocol.swift"

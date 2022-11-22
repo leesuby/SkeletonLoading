@@ -10,18 +10,27 @@ import UIKit
 
 
 //MARK: Generic Type
-public struct SkeletonViewExtension<ExtendedType> {
-    public private(set) var type: ExtendedType
+public struct SkeletonViewExtension<T> {
+    public private(set) var type: T
 
-    public init(_ type: ExtendedType) {
+    public init(_ type: T) {
         self.type = type
     }
 }
 
-public protocol SkeletonViewExtended {
-    associatedtype ExtendedType
+public extension SkeletonViewExtension where T: UIView {
 
-    var sk: SkeletonViewExtension<ExtendedType> { get set }
+    var isSkeletonActive: Bool {
+        type._status == .on || type.subviewsSkeletonables.contains(where: { $0.sk.isSkeletonActive })
+    }
+    
+}
+
+
+public protocol SkeletonViewExtended {
+    associatedtype T
+
+    var sk: SkeletonViewExtension<T> { get set }
 }
 
 extension SkeletonViewExtended {
@@ -32,13 +41,8 @@ extension SkeletonViewExtended {
     }
 }
 
-public extension SkeletonViewExtension where ExtendedType: UIView {
+extension UIView: SkeletonViewExtended { }
 
-    var isSkeletonActive: Bool {
-        type._status == .on || type.subviewsSkeletonables.contains(where: { $0.sk.isSkeletonActive })
-    }
-    
-}
 
 //MARK: Swizzle
 extension UIView {
@@ -57,7 +61,7 @@ extension UIView {
     }
     
     func swizzleLayoutSubviews() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+        DispatchQueue.main.async {
             DispatchQueue.once(token: "UIView.SkeletonView.swizzleLayoutSubviews") {
                 swizzle(selector: #selector(UIView.layoutSubviews),
                         with: #selector(UIView.skeletonLayoutSubviews),
@@ -69,7 +73,7 @@ extension UIView {
     }
     
     func unSwizzleLayoutSubviews() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+        DispatchQueue.main.async {
             DispatchQueue.removeOnce(token: "UIView.SkeletonView.swizzleLayoutSubviews") {
                 swizzle(selector: #selector(UIView.skeletonLayoutSubviews),
                         with: #selector(UIView.layoutSubviews),
@@ -80,7 +84,7 @@ extension UIView {
     }
     
     func swizzleTraitCollectionDidChange() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+        DispatchQueue.main.async {
             DispatchQueue.once(token: "UIView.SkeletonView.swizzleTraitCollectionDidChange") {
                 swizzle(selector: #selector(UIView.traitCollectionDidChange(_:)),
                         with: #selector(UIView.skeletonTraitCollectionDidChange(_:)),
@@ -91,7 +95,7 @@ extension UIView {
     }
     
     func unSwizzleTraitCollectionDidChange() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+        DispatchQueue.main.async {
             DispatchQueue.removeOnce(token: "UIView.SkeletonView.swizzleTraitCollectionDidChange") {
                 swizzle(selector: #selector(UIView.skeletonTraitCollectionDidChange(_:)),
                         with: #selector(UIView.traitCollectionDidChange(_:)),
@@ -184,8 +188,6 @@ extension UIView{
 }
 
 //MARK: Skeleton Recursive
-
-extension UIView: SkeletonViewExtended { }
 
 extension UIView {
     

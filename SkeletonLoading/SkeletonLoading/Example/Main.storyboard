@@ -28,10 +28,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Ql9-Jy-aWM">
@@ -58,9 +58,6 @@
                                     <constraint firstItem="obr-b6-dib" firstAttribute="leading" secondItem="eHI-ka-8vS" secondAttribute="leading" constant="45" id="eop-Gq-7mO"/>
                                     <constraint firstItem="obr-b6-dib" firstAttribute="top" secondItem="eHI-ka-8vS" secondAttribute="top" constant="142" id="inJ-75-hGX"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-L0-T2w">
                                 <rect key="frame" x="0.0" y="243" width="375" height="264"/>
@@ -72,6 +69,9 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-MK-YzZ">
                                 <rect key="frame" x="0.0" y="507" width="375" height="160"/>

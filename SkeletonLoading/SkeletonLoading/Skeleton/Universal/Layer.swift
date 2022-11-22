@@ -25,7 +25,6 @@ struct SkeletonMultilinesLayerConfig {
                      bottom: paddingInsets.bottom,
                      right: paddingInsets.right)
     }
-    
 }
 
 class SkeletonMultilineLayerBuilder {

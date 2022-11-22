@@ -31,6 +31,6 @@ public class SkeletonViewAppearance {
 
     public var renderSingleLineAsView: Bool = false
     
-    public var skeletonCornerRadius: Float = 0
+    public var skeletonCornerRadius: Float = 5
 
 }
