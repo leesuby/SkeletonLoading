@@ -47,7 +47,9 @@ extension SkeletonCollectionDataSource: UICollectionViewDataSource {
         guard let cell = originalCollectionViewDataSource?.collectionSkeletonView(collectionView, skeletonCellForItemAt: indexPath) else {
             let cellIdentifier = originalCollectionViewDataSource?.collectionSkeletonView(collectionView, cellIdentifierForItemAt: indexPath) ?? ""
             let fakeCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
-
+            
+            fakeCell.isSkeletonable = true
+            
             skeletonizeViewIfContainerSkeletonIsActive(container: collectionView, view: fakeCell)
             return fakeCell
         }
